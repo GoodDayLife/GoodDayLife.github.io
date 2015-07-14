@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//w3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>狸猫的博客</title>
+		<style type="text/css">
+			<!--
+			.STYLE1 {font-size: 36px}
+			.STYLE2 {font-size: 36px}
+			.STYLE2 {font-size: 24px;
+				font-weight: bold;
+			}
+			.STYLE4 {font-size: 24px}
+			-->
+		</style>
+	</head>
+
+
+	<body>
+		<p> &nbsp;</p>
+		<p align="center">&nbsp;</p>
+		<p>&nbsp;</p>
+		<div align="center">
+			<table cellspacing="0" width="892">
+				<!--DWLayoutTable-->
+				<tbody><tr>
+						<td height="100" valign="top" width="572"><img src="/assets/tks.jpg" alt="logo" longdesc="http://leemoo.info" align="left" height="80" width="269"></td>
+						<td align="center" valign="middle" width="310"><a href="http://contact.leemoo.info" target="_blank" class="STYLE1 STYLE4" style="text-decoration:none">个人常用链接</a>
+						</td>
+					</tr>
+					<tr>
+						td rowspan="4" valign="top"><div class="STYLE2">
+							<marquee style="WIDTH: 500px; HEIGHT: 250px" scrollamount="2" direction="up">
+							<p class="STYLE3" align="left">关于这个博客</p>
+							<p align="left"> 此博客由狸猫维护编辑。<br />
+							这是不应该是一些无聊的话，不过现在还没有足够的时间填写完整，不过后续会更新的。谢谢观看。
+							<br />
+							<span class="STYLE3">关于为什么写这个博客</span><br />
+							<br >
+							当然作者不是闲的蛋疼的一个人，<br /> 
+							写这个博客自然是有目的的。<br /> 
+							不信的话，你可以等几天再来看。<br /> 
+							一定会更新的。<br />
+							</p>
+							</marquee>
+					</div></td>
+					<td align="center" height="100" valign="middle"><a href="http://leemoo.info" target="_blank" class="STYLE4" style="text-decoration:none">狸猫的博客</a></td>
+				</tr>
+				<tr>
+					<td height="67">&nbsp;</td>
+				</tr>
+				<tr>
+					<td height="15"&nbsp;</td>
+				</tr>
+		</tbody></table>
+		</div>
+		<div id="flk">
+			<p align=right"><strong><a href="http;//about.leemoo.info" target="_blank">关于作者</a></strong> </p>
+		</div>
+		<p>&nbsp;</p>
+		<div id="首页">
+			<h1>最新文章</h1> 
+			<ul class="posts"> 
+				{% for post in site.posts %} 
+				<li>
+				<span>
+					{{ post.date | date_to_string }}
+			
+				</span> &raquo; 
+		
+				<a href="{{ post.url }}">{{ post.title }}</a>
+		
+				</li> {% endfor %} 
+
+			</ul> 
+
+		</div> <br /> 
+
+		<div> 
+
+			<h1>最新视频</h1> <br /> 
+
+			<a href="/assets/tks.mp4" style="text-decoration:none"> <img border="0" src="/assets/tks.jpg" /> <br /> 谢谢你的爱 </a> 
+
+		
+		</div>
+	
+	</body>
+
+</html>
+
