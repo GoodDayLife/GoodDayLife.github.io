@@ -24,8 +24,8 @@
 			<table cellspacing="0" width="892">
 				<!--DWLayoutTable-->
 				<tbody><tr>
-						<td height="100" valign="top" width="572"><img src="/assets/tks.jpg" alt="logo" longdesc="http://leemoo.info" align="left" height="80" width="269"></td>
-						<td align="center" valign="middle" width="310"><a href="/homepage.html" target="_blank" class="links" style="text-decoration:none">个人常用链接</a>
+						<td height="100" valign="top" width="572"><img src="/assets/tks.jpg" alt="logo" longdesc="/index.html" align="left" height="80" width="269"></td>
+						<td align="center" valign="middle" width="310"><a href="/index.html" target="_blank" class="links" style="text-decoration:none">个人常用链接</a>
 						</td>
 					</tr>
 					<tr>
@@ -55,27 +55,9 @@
 		</tbody></table>
 		</div>
 		<div id="flk">
-			<p align=right"><strong><a href="http;//about.leemoo.info" target="_blank">关于作者</a></strong> </p>
+			<p align=right"><strong><a href="/about.html" target="_blank">关于作者</a></strong> </p>
 		</div>
 		<p>&nbsp;</p>
-		<div id="首页">
-			<h1>最新文章</h1> 
-			<ul class="posts"> 
-				{% for post in site.posts %} 
-				<li>
-				<span>
-					{{ post.date | date_to_string }}
-			
-				</span> &raquo; 
-		
-				<a href="{{ post.url }}">{{ post.title }}</a>
-		
-				</li> {% endfor %} 
-
-			</ul> 
-
-		</div> <br /> 
-
 		<div> 
 
 			<h1>最新视频</h1> <br /> 
