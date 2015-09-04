@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta id="viewport" name="viewport" content="width=device-width; initial-scale=0.9; maximum-scale=2.0; minimum-scale=0.9;">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>上网认证系统</title>
+<link href="./css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="scripts/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="scripts/ui-main.js"></script>
+<script type="text/javascript" src="scripts/input.js"></script>
+</head>
+
+<body onLoad="init();">
+<div class="head">
+	<div class="logo">
+		<dl>
+			<dt><img class="logo" src="./images/logo.png" /></dt>
+			<dd>
+				<h2>上网认证系统</h2>
+				<h4>Identity Authentication System</h4>
+			</dd>
+		</dl>
+	</div>
+	<div class="tool">
+		<ul>
+			<li class="modify"><a href="/user/user.htm">修改密码</a></li>
+			<li class="download"><a href="/Dkeyauth.exe">下载Dkey客户端</a></li>
+		</ul>
+	</div>
+</div>
+<div class="central"><br />		
+		<!--密码认证登录区-->
+		<div class="login" id="mode_password">
+		<form method="post">
+			<div class="login_body">
+				<!--标题-->
+				<div class="login_head">
+					<dl>
+						<dt class="user_ico"></dt>
+						<dd><span>密码登录</span>在您使用网络之前，需要进行验证。</dd>
+					</dl>
+				</div>
+				<!--输入部分-->
+				<div class="login_operate">
+					<ul>
+						<li class="username li_press"><span></span>
+						<label class="txt_default" for="username" default_txt="用户名">用户名</label>
+						<input name="une" id="une" class="input focus" type="text" /><input type="hidden" id="username" name="username" /></li>
+						<li class="password"><span></span>
+						<label class="txt_default" for="passwd" default_txt="密码" >密码</label>
+						<input name="pass_wd" id="passwd" class="input" value="" type="password" /><input type="hidden" id="pwd" name="pass_word" /></li>
+					</ul>                    
+				</div>
+				<!--提示与反馈信息-->
+				<div class="login_box_msg shiftKey" style="display: none;">
+					<dl>
+						<dt></dt>
+						<dd>大写锁定已打开</dd>
+					</dl>
+				</div>
+                <div class="login_box_msg emptyName" style="display: none;">
+					<dl>
+						<dt></dt>
+						<dd>用户名不能为空</dd>
+					</dl>
+				</div>
+                                <div class="login_box_msg erroInfo" style="display: none;">
+					<dl>
+						<dt></dt>
+						<dd id="err_info"></dd>
+					</dl>
+				</div>
+				<!--登录按钮-->
+				<div class="btn_ok">
+					<div class="login_btn login_btn_ok">
+						<input name="btlogin" class="button" type="submit" onclick="javascript:return onApply();" value="登录" tabindex="5">
+					</div>
+				</div>
+			</div>
+		</form>
+		</div>
+		
+</div>
+<div class="bottom"><span></span></div>
+<div class="central_bg"></div>
+
+<!--[if IE 6]>
+<script src="scripts/DD_belatedPNG.js"></script>
+<script>
+  //IE6 PNG 透明度	
+  DD_belatedPNG.fix('.login_operate ul li, .login_operate ul li span, .login_btn_ok, .login_btn_other, .login_head dt, .login_box_msg dt, .head .tool ul li, .central_bg, .other_x,.logo');
+</script>
+<![endif]--> 
+</body>
+</html>
